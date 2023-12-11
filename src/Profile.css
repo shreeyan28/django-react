@@ -1,0 +1,36 @@
+/* UserProfile.css */
+
+/* General styling for the profile container */
+.profile-container {
+    margin-top: 20px;
+    color: #007bff; /* Blue theme color */
+}
+
+/* Styling for the profile heading */
+.profile-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff; /* Blue theme color */
+}
+
+/* Styling for form labels */
+.form-label {
+    color: #007bff; /* Blue theme color */
+}
+
+/* Custom styling for the update button */
+.update-button {
+    background-color: #007bff; /* Blue theme color */
+    border: none;
+}
+
+.update-button:hover {
+    background-color: #0056b3; /* Darker shade of blue for hover state */
+}
+
+/* Styling for image preview */
+.image-preview {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}

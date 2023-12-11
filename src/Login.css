@@ -1,0 +1,121 @@
+/* Overall Page Styles */
+.login-page {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: #f5f5f5; /* Light gray background */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Welcome Section Styles */
+  .welcome-section {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .welcome-section h2 {
+    font-size: 2.5rem;
+    color: #007bff; /* Bootstrap primary color */
+    margin-bottom: 15px;
+  }
+  
+  .welcome-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-section .bank-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto 30px;
+    display: block;
+  }
+  
+  /* Login Container Styles */
+  .login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    animation: slideUp 1.5s ease-in-out;
+  }
+  
+  /* Login Form Styles */
+  .login-form {
+    width: 100%;
+  }
+  
+  .login-form h1 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .form-group svg {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #007bff;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 5px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .welcome-section h2 {
+      font-size: 2rem;
+    }
+  
+    .login-container {
+      padding: 20px;
+    }
+  }
+

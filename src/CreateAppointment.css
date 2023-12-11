@@ -1,0 +1,78 @@
+/* CreateAppointment.css */
+
+.appointment-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .appointment-container h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .appointment-form {
+    display: grid;
+    grid-gap: 15px;
+    padding: 20px;
+  }
+  
+  .appointment-form input,
+  .appointment-form select,
+  .appointment-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .appointment-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .appointment-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .header-image {
+    width: 100%;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .appointment-nav, .navbar {
+    background-color: #004085; /* Light blue background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .appointment-nav a, .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  .appointment-nav a:hover, .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar-brand {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
