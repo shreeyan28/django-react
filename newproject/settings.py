@@ -49,6 +49,7 @@ CORS_ALLOWED_ORIGINS = [
    # "http://localhost:8989", 
     #"http://127.0.0.1:8989/", # React app's address
 ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
