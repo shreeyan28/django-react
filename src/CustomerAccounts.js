@@ -7,7 +7,7 @@ const CustomerAccounts = () => {
   
   useEffect(() => {
     // Replace with your actual API endpoint
-    axios.get('http://localhost:8989/api/users/')
+    axios.get('http://localhost:8000/api/users/')
       .then(response => {
         console.log("API Response:", response.data); 
         setUsers(response.data);

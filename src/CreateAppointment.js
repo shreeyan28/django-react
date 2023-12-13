@@ -27,7 +27,7 @@ const CreateAppointment = ({ token }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8989/api/appointments/', appointmentData);
+      await axios.post('http://localhost:8000/api/appointments/', appointmentData);
       alert('Appointment created successfully!');
     } catch (error) {
       console.error('Error creating appointment:', error);

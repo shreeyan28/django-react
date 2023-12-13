@@ -7,7 +7,7 @@ import AOS from 'aos';
 import { AiOutlineUser, AiOutlineLock } from 'react-icons/ai';
 import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Login.css'; // Your custom CSS file
+import './Login.css'; 
 
 const LoginSchema = Yup.object().shape({
   username: Yup.string().required('Username is required'),
@@ -19,13 +19,14 @@ const Login = (props) => {
     AOS.init({ duration: 2000 });
   }, []);
 
-  // Inside your Login.js, in the handleSubmit function
   const handleSubmit = async (values, { setSubmitting }) => {
     try {
-      const response = await axios.post('http://localhost:8989/api/login/', values);
+      const response = await axios.post('http://localhost:8000/api/login/', values);
       console.log(response.data);
-      props.onLoginSuccess(response.data.token); // Pass the token on successful login
-       alert('Login Successful');
+      props.onLoginSuccess(response.data.token);
+      const token = response.data.token;
+      console.log("Token:", token); //token
+      alert('Login Successful');
      } catch (error) {
      console.error('Login failed:', error);
      alert('Login failed');
@@ -40,7 +41,7 @@ const Login = (props) => {
       <div className="welcome-section">
         <h2>Welcome to KS Bank</h2>
         <p>Secure and Reliable Banking</p>
-        {/* Example for an image (replace with your image path) */}
+        
          <img src={bankImage} alt="Bank" className="bank-image" />
       </div>
       <div data-aos="fade-up" className="login-container d-flex align-items-center justify-content-center">

@@ -19,7 +19,7 @@ const AddUser = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:8989/api/users/', newUser)
+    axios.post('http://localhost:8000/api/users/', newUser)
       .then(response => {
         console.log(response.data);
         alert('User added successfully!');
